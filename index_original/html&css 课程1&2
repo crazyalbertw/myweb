@@ -1,0 +1,104 @@
+html&css 课程1&2
+
+Title: index.html
+<!doctype html>
+<html>
+	<head>
+		<title>My Webpage</title>
+		<link href="main.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+		<h1>Home</hi>
+			emmet
+			
+		<ul>
+			<li>Home</li>
+			<li><a href="page2.html">page 2</a></li>
+			<li><a href="page3.html">page 3</a></li>
+		</ul>
+		<h2>This is my Homepage</h2>
+		<p>
+			And all of my Homepage content
+		</p>
+	</body>
+</html> 
+
+Title: page2.html
+<!doctype html>
+<html>
+	<head>
+		<title>My Webpage</title>
+		<link href="main.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<h1>Home</hi>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li>page 2</li>
+			<li><a href="page3.html">page 3</a></li>
+		</ul>
+		<h2>This is my Homepage</h2>
+		<p>
+			This is all my page 2 Contents
+		</p>
+		<p class="secondary">
+			This is all my page 2 Contents
+		</p>
+		<p id="special">
+			This is all my page 2 Contents
+		</p>
+	</body>
+</html>
+
+Title: page3.html
+<!doctype html>
+<html>
+	<head>
+		<title>My Webpage</title>
+		<link href="main.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<h1>Home</hi>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="page2.html">page 2</a></li>
+			<li>page 3</li>
+		</ul>
+		<h2>This is my Homepage</h2>
+		<p>
+			And all of my Homepage content
+		</p>
+	</body>
+</html>
+
+Title: main.css
+body {
+	background: #500;
+	font-family: arial;
+}
+
+h1, h2, p, li {
+	color: #666;
+}
+a {
+	color: green;
+}
+
+.secondary {
+	background: none;
+	color: #777;
+}
+#special {
+	background: red;
+	color: blue;
+}
+p {
+	background: #555;
+	color: white;
+	padding: 5px; 
+}
+
