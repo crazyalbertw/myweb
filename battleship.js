@@ -185,6 +185,8 @@ function init() {
     model.generateShipLocations();
 }
 window.onload = init;
+
+
 //view.displayHit("55");
 //view.displayMiss("35");
 //view.displayHit("05");
