@@ -1,0 +1,167 @@
+/*common css*/
+/*main-title and sub-title*/
+
+.main-title h1{
+	color: darkslateblue;
+	margin: 100px;
+	text-align: center;
+}
+.sub-title {
+	color: cornflowerblue;
+	margin: 80px;
+	text-align: center;
+}
+
+/*section 1 home*/
+
+#home .navigation {
+	position: fixed;
+	z-index: 20;
+	width: 100%;
+}
+
+#home .nav a:hover{
+	color:deepskyblue;
+}
+
+#home .navbar-brand {
+	font-family: serif;
+}
+
+#myCarousel div.carousel-inner .item {
+	margin: 50px 0 0 0;
+}
+
+#myCarousel div.carousel-inner img {
+	width: 800px;
+	height: 500px;
+	margin: auto;
+}
+
+#myCarousel div.carousel-inner h3 {
+	color: floralwhite;
+	font-family: sans-serif;
+}
+
+#myCarousel div.carousel-inner p {
+	color: floralwhite;
+}
+
+/*section-2 me*/
+
+#me .sub-title {
+	text-align: left;
+}
+
+/*section-3 comics*/
+
+/*section-4 hometown*/
+
+/*section-5 nba*/
+
+.nba-star img {
+	width: 256px;
+	height: 192px;
+	float: right;
+	border-radius: 20px;
+}
+
+/*section-6 fitness*/
+
+
+
+
+
+/*sub-page-5 nba*/
+
+
+/*sub-page-2+ My Work*/
+
+#work button {
+	margin: 10px 0;
+}
+
+#work button h2 {
+	text-align:center;
+	margin: 10px 20px;
+}
+
+#game .battleship {
+	position: relative;
+	background-image: url("../homepage/images/board.jpg");
+	/*width: 1024px;*/
+	/*!*1024*!*/
+	/*height: 863px;*/
+	/*!*863*!*/
+	width:512px;
+	height:440px;
+	background-size: 512px 431px;
+	margin: auto;
+}
+
+#game .battleship #messageView {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 5px;
+	color: white;
+	font-size: 20px;
+}
+
+#game .battleship table{
+	 border-spacing: 0px;
+	 /* could use border-collapse instead */
+	 /* border-collapse: collapse; */
+	 position: absolute;
+	 /*after absolute, we can set the position*/
+	 /*left: 173px;*/
+	 /*top: 98px;*/
+	left:86px;
+	top:50px;
+}
+
+#game .battleship td {
+	/*width: 95px;*/
+	/*height: 95px;*/
+	width:48px;
+	height:48px;
+}
+
+#game form {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	padding: 3px;
+	margin: 0;
+	background-color: darkgreen;
+}
+
+#game form input{
+	font-size: 0.8em;
+	background-color: lightcyan;
+}
+
+#game .hit {
+	background: url("../homepage/images/ship.png") no-repeat center center;
+	background-size:35px 20px;
+}
+
+#game .miss {
+	background: url("../homepage/images/miss.png") no-repeat center center;
+	background-size:35px 20px;
+}
+
+.done-true {
+	text-decoration: line-through;
+	color:grey;
+}
+
+
+
+
+
+
+
+
+
+
