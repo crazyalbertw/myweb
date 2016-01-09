@@ -1,35 +1,35 @@
-/*common css*/
-/*main-title and sub-title*/
-
-.main-title h1{
-	color: darkslateblue;
-	margin: 100px;
-	text-align: center;
-}
-.sub-title {
-	color: cornflowerblue;
-	margin: 80px;
-	text-align: center;
+/*section*/
+section {
+	padding: 100px 0;
 }
 
-/*section 1 home*/
-
-#home .navigation {
-	position: fixed;
-	z-index: 20;
-	width: 100%;
+section h2.section-heading {
+	font-size:40px;
+	margin-top:0;
+	margin-bottom:15px;
 }
 
-#home .nav a:hover{
-	color:deepskyblue;
+section h3.section-subheading {
+	font-size:16px;
+	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:none;
+	font-style:italic;
+	font-weight:400;
+	margin-bottom:75px
 }
 
-#home .navbar-brand {
-	font-family: serif;
+.me-heading {
+	margin:15px 0;
+	text-transform:none
 }
+
+.text-color {
+	color:#777
+}
+/*section 1 me*/
 
 #myCarousel div.carousel-inner .item {
-	margin: 50px 0 0 0;
+	margin: 0;
 }
 
 #myCarousel div.carousel-inner img {
@@ -47,41 +47,38 @@
 	color: floralwhite;
 }
 
-/*section-2 me*/
+/*section-2 my work*/
 
-#me .sub-title {
-	text-align: left;
+/*section-3 my hobby*/
+
+/*modal page*/
+.lr {
+	height:75px;
+	width:1px;
+	margin-left:35px;
+	background-color:#222;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	z-index:1051
 }
 
-/*section-3 comics*/
-
-/*section-4 hometown*/
-
-/*section-5 nba*/
-
-.nba-star img {
-	width: 256px;
-	height: 192px;
-	float: right;
-	border-radius: 20px;
+.rl {
+	height:75px;
+	width:1px;
+	background-color:#222;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	z-index:1052
 }
+/*work-work*/
 
-/*section-6 fitness*/
-
-
-
-
-
-/*sub-page-5 nba*/
-
-
-/*sub-page-2+ My Work*/
-
-#work button {
+#work-work button {
 	margin: 10px 0;
 }
 
-#work button h2 {
+#work-work button h2 {
 	text-align:center;
 	margin: 10px 20px;
 }
@@ -101,21 +98,21 @@
 
 #game .battleship #messageView {
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	margin: 5px;
 	color: white;
 	font-size: 20px;
 }
 
 #game .battleship table{
-	 border-spacing: 0px;
-	 /* could use border-collapse instead */
-	 /* border-collapse: collapse; */
-	 position: absolute;
-	 /*after absolute, we can set the position*/
-	 /*left: 173px;*/
-	 /*top: 98px;*/
+	border-spacing: 0;
+	/* could use border-collapse instead */
+	/* border-collapse: collapse; */
+	position: absolute;
+	/*after absolute, we can set the position*/
+	/*left: 173px;*/
+	/*top: 98px;*/
 	left:86px;
 	top:50px;
 }
@@ -129,8 +126,8 @@
 
 #game form {
 	position: absolute;
-	right: 0px;
-	bottom: 0px;
+	right: 0;
+	bottom: 0;
 	padding: 3px;
 	margin: 0;
 	background-color: darkgreen;
@@ -155,6 +152,22 @@
 	text-decoration: line-through;
 	color:grey;
 }
+
+/*comics*/
+
+/*nba*/
+
+.nba-star img {
+	width: 256px;
+	height: 192px;
+	float: right;
+	border-radius: 20px;
+}
+
+/*fitness*/
+
+
+
 
 
 

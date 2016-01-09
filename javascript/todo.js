@@ -21,7 +21,7 @@ test.controller('todoCtrl', function($scope) {
 
     $scope.addTodo = function() {
         $scope.todos.push({text:$scope.formTodoText, done:false});
-        //add to todo list
+        //add to todolist
         $scope.formTodoText = '';
         //clear input data
         }
