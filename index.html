@@ -38,7 +38,7 @@
 <body id="page-top">
 
 	<div class="navigation">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header page-scroll">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -65,30 +65,33 @@
 			</div>
 		</nav>
 	</div>
+
 	<!-- Header -->
+
 	<header>
 		<div class="container">
 			<div class="intro-text text-center">
-				<div class="intro-lead-in">Welcome To Our Studio!</div>
+				<div class="intro-lead-in">Welcome To My World!</div>
 				<div class="intro-heading">It's Nice To Meet You</div>
 				<a href="#me" class="page-scroll btn btn-xl">More About Me</a>
 			</div>
 		</div>
 	</header>
 
-	<!--section 2 about-me-->
+	<!--section 2 me-->
+
 	<section id="me">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-lg-12">
 					<h2 class="section-heading text-uppercase">About me</h2>
-					<h3 class="section-subheading text-color">Work hard, play hard</h3>
+					<h3 class="section-subheading section-color">Work hard, play hard</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 text-left">
 					<h4 class="me-heading">I am looking for a job!</h4>
-					<p class="text-color">Hi! Welcome to my homepage. <br>
+					<p class="me-color">Hi! Welcome to my homepage. <br>
 						I recently graduated from Electrical
 						Engineering department, San Jose State University. <br>
 						Now, I am a passionate front-end web developer who loves to try all the creative things. <br>
@@ -98,7 +101,7 @@
 				<div class="col-md-6 text-left">
 					<!--<button><a href="doc/albert_resume_v6.pdf"><h2>resume</h2></a></button>-->
 					<h4 class="me-heading">I am from Beijing, China</h4>
-					<p class="text-color">I am a Beijinger who can speak Mandarin and Beijinghua
+					<p class="me-color">I am a Beijinger who can speak Mandarin and Beijinghua
 					</p>
 				</div>
 			</div>
@@ -106,36 +109,42 @@
 	</section>
 
 	<!--section 2 My Work-->
+
 	<section id="work" class="section-2">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-lg-12">
 					<h2 class="section-heading text-uppercase">My Work</h2>
-					<h3 class="section-subheading text-color">A few related projects I set up.</h3>
+					<h3 class="section-subheading section-color">A few related projects I set up.</h3>
 				</div>
 			</div>
 			<div class="row text-center">
-				<div class="col-md-4 text-center">
-					<button type="button" class="btn btn-default">
-						<a href="#game" data-toggle="modal">Battle Ship Game</a>
-					</button>
+				<div class="col-sm-4 col-md-4 text-center">
+					<a href="#game" data-toggle="modal">
+						<button type="button" class="btn btn-warning">
+							Battle Ship Game
+						</button>
+					</a>
 				</div>
-				<div class="col-md-4 text-center">
-					<button type="button" class="btn btn-default">
-						<a href="#todolist" data-toggle="modal">Todo List</a>
-					</button>
+				<div class="col-sm-4 col-md-4 text-center">
+					<a href="#todolist" data-toggle="modal">
+						<button type="button" class="btn btn-warning">
+							Todo List
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!--section 3 My Hobbies-->
+
 	<section id="hobby" class="section-3">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-lg-12">
 					<h2 class="section-heading text-uppercase">My Hobbies</h2>
-					<h3 class="section-subheading text-color">A few things I like to do</h3>
+					<h3 class="section-subheading section-color">A few things I like to do</h3>
 				</div>
 			</div>
 			<div class="row text-center">
@@ -201,9 +210,30 @@
 		</div>
 	</section>
 
+	<!--footer-->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<ul class="list-inline social-buttons">
+						<li><a href="#"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 <!--multiple page in one page-->
 	<!--battleship game-->
+
 	<div id="game" class="modal">
 		<div class="modal-content">
 			<div class="close-modal" data-dismiss="modal">
@@ -220,7 +250,7 @@
 						<br>
 						Each one has a length of 3 (Ex: a3, a4, a5 is one ship length).</h3>
 				</div>
-				<div class="col-sm-12 col-md-offset-2 col-md-8">
+				<div class="col-xs-12 col-md-offset-2 col-md-8">
 					<div class="battleship">
 						<div id="messageView"></div>
 						<!--messageView is a ID, not a class-->
@@ -308,9 +338,8 @@
 		</div>
 	</div>
 
-
-
 	<!--comics-->
+
 	<div id="comics" class="modal">
 		<div class="modal-content">
 			<div class="close-modal" data-dismiss="modal">
@@ -333,7 +362,9 @@
 			</button>
 		</div>
 	</div>
+
 	<!--nba-->
+
 	<div id="nba" class="modal">
 		<div class="modal-content">
 			<div class="close-modal" data-dismiss="modal">
@@ -428,7 +459,9 @@
 			</div>
 		</div>
 	</div>
+
 	<!--fitness-->
+
 	<div id="fitness" class="modal">
 		<div class="modal-content">
 			<div class="close-modal" data-dismiss="modal">

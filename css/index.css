@@ -1,4 +1,45 @@
+/*navbar*/
+#myNavbar li a:hover{
+	background-color: #888;
+}
+/*header*/
+
+
+header {
+	background-image:url("../image/ggb.jpg");
+	background-attachment: scroll;
+	background-position: center top;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	-o-background-size:cover;
+	text-align:center;
+	color:#fff;
+}
+
+header .intro-text {
+	padding-top:250px;
+	padding-bottom:200px
+}
+header .intro-text .intro-lead-in {
+	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style:italic;
+	font-size:22px;
+	line-height:22px;
+	margin-bottom:25px
+}
+
+header .intro-text .intro-heading {
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	font-weight:700;
+	font-size:50px;
+	line-height:50px;
+	margin-bottom:25px
+}
+
 /*section*/
+
 section {
 	padding: 100px 0;
 }
@@ -18,15 +59,24 @@ section h3.section-subheading {
 	margin-bottom:75px
 }
 
+section .section-color {
+	color: #777;
+}
+
+/*section 1 me*/
+
 .me-heading {
 	margin:15px 0;
 	text-transform:none
 }
 
-.text-color {
-	color:#777
+.me-color {
+	color: #555;
 }
-/*section 1 me*/
+
+/*section-2 my work*/
+
+/*section-3 my hobby*/
 
 #myCarousel div.carousel-inner .item {
 	margin: 0;
@@ -47,11 +97,34 @@ section h3.section-subheading {
 	color: floralwhite;
 }
 
-/*section-2 my work*/
+/*footer*/
 
-/*section-3 my hobby*/
+footer {
+	padding:25px 0;
+	text-align:center
+}
+
+ul.social-buttons li a {
+	display:block;
+	background-color:#222;
+	height:40px;
+	width:40px;
+	border-radius:100%;
+	font-size:20px;
+	line-height:40px;
+	color:#fff;
+	outline:0;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s
+}
+
+ul.social-buttons li a:hover {
+	background-color:#fed136
+}
 
 /*modal page*/
+
 .lr {
 	height:75px;
 	width:1px;
@@ -72,16 +145,8 @@ section h3.section-subheading {
 	-webkit-transform:rotate(90deg);
 	z-index:1052
 }
-/*work-work*/
 
-#work-work button {
-	margin: 10px 0;
-}
-
-#work-work button h2 {
-	text-align:center;
-	margin: 10px 20px;
-}
+/*battleship game*/
 
 #game .battleship {
 	position: relative;
@@ -166,8 +231,10 @@ section h3.section-subheading {
 
 /*fitness*/
 
+/*footer*/
+footer {
 
-
+}
 
 
 
