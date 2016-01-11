@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64643c1d-2e69-4132-908b-9050b0227ac5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/ggb.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="myweb.iws" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7702703">
-              <caret line="128" column="37" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.2837838">
+              <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -346,7 +344,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452367901161</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add homepage pic, edit navbar, add footer, edit my work button">
+      <created>1452548838766</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1452548838766</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -398,7 +402,8 @@
     <MESSAGE value="edit battleship game" />
     <MESSAGE value="edit battleship game, mobile friendly" />
     <MESSAGE value="edit font, edit framework, add modal function, one page multiple tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit font, edit framework, add modal function, one page multiple tasks" />
+    <MESSAGE value="add homepage pic, edit navbar, add footer, edit my work button" />
+    <option name="LAST_COMMIT_MESSAGE" value="add homepage pic, edit navbar, add footer, edit my work button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -628,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7702703">
-          <caret line="128" column="37" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.2837838">
+          <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
           <folding />
         </state>
       </provider>
