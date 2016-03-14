@@ -56,8 +56,6 @@ var model = {
             } while (this.collision(locations));
             this.ships[i].locations = locations;
         }
-        console.log("Ships array: ");
-        console.log(this.ships);
     },
 
     generateShip: function() {

@@ -11,16 +11,16 @@
 	<meta name="author" content="albert_wang">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Albert Homepage</title>
+	<title>AlbeeSpace</title>
 
-	<!-- Bootstrap Core CSS -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Updated Bootstrap Core CSS 3.3.6-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 	<!--Custom css-->
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 
-	<!-- Custom font -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- Updated Custom font 4.5.0-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -38,7 +38,7 @@
 <body id="page-top">
 
 	<div class="navigation">
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header page-scroll">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -47,10 +47,11 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand page-scroll" href="#page-top">Albert Homepage</a>
+					<!--hamburger-->
+					<a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-fort-awesome"></i> AlbeeSpace</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav">
 						<li>
 							<a class="page-scroll" href="#me">Me</a>
 						</li>
@@ -59,6 +60,14 @@
 						</li>
 						<li>
 							<a class="page-scroll" href="#hobby">My Hobbies</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a class="page-scroll" href="#">Sign Up</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Login</a>
 						</li>
 					</ul>
 				</div>
@@ -73,7 +82,7 @@
 			<div class="intro-text text-center">
 				<div class="intro-lead-in">Welcome To My World!</div>
 				<div class="intro-heading">It's Nice To Meet You</div>
-				<a href="#me" class="page-scroll btn btn-xl">More About Me</a>
+				<button class="btn btn-default btn-lg page-scroll"><a href="#me">More About Me</a></button>
 			</div>
 		</div>
 	</header>
@@ -90,18 +99,18 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6 text-left">
-					<h4 class="me-heading">I am looking for a job!</h4>
+					<h3 class="me-heading">I am looking for a job!</h3>
 					<p class="me-color">Hi! Welcome to my homepage. <br>
 						I recently graduated from Electrical
 						Engineering department, San Jose State University. <br>
-						Now, I am a passionate front-end web developer who loves to try all the creative things. <br>
+						Now, I am a passionate full stack web developer who loves to try all the creative things. <br>
 						I love all kinds of sports, reading comics, and working out.
 					</p>
 				</div>
 				<div class="col-md-6 text-left">
 					<!--<button><a href="doc/albert_resume_v6.pdf"><h2>resume</h2></a></button>-->
-					<h4 class="me-heading">I am from Beijing, China</h4>
-					<p class="me-color">I am a Beijinger who can speak Mandarin and Beijinghua
+					<h3 class="me-heading">I am from Beijing, China</h3>
+					<p class="me-color">I am a Beijinger who can speak Mandarin and Beijinghua.
 					</p>
 				</div>
 			</div>
@@ -115,34 +124,38 @@
 			<div class="row text-center">
 				<div class="col-lg-12">
 					<h2 class="section-heading text-uppercase">My Work</h2>
-					<h3 class="section-subheading section-color">A few related projects I set up.</h3>
+					<h3 class="section-subheading section-color">A few projects I set up.</h3>
 				</div>
 			</div>
 			<div class="row text-center">
-				<div class="col-sm-4 col-md-4 text-center">
-					<a href="http://academy.focuskpi.com">
-						<button type="button" class="btn btn-warning">
-							Academy Website
-						</button>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<a href="focusKPIAcademyWithServer/views/index.html" id="academyWebsite">
+						<div class="thumbnail">
+							<img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" alt="">
+								Academy Website
+						</div>
 					</a>
 				</div>
-				<div class="col-sm-4 col-md-4 text-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 					<a href="#game" data-toggle="modal">
-						<button type="button" class="btn btn-warning">
-							Battle Ship Game
-						</button>
+						<div class="thumbnail">
+							<img src="https://images.unsplash.com/photo-1457694716743-eb419114c894?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" alt="">
+							Battle-ship game
+						</div>
 					</a>
 				</div>
-				<div class="col-sm-4 col-md-4 text-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 					<a href="#todolist" data-toggle="modal">
-						<button type="button" class="btn btn-warning">
-							Todo List
-						</button>
+						<div class="thumbnail">
+							<img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" alt="">
+							Todo-list
+						</div>
 					</a>
 				</div>
 			</div>
 		</div>
 	</section>
+
 
 	<!--section 3 My Hobbies-->
 
@@ -216,6 +229,7 @@
 			</div>
 		</div>
 	</section>
+
 
 	<!--footer-->
 
@@ -492,15 +506,14 @@
 		</div>
 	</div>
 
-	<!-- jQuery 2.1.3 -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- updated jQuery 2.2.1 -->
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
 
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	<!-- Angular JavaScript -->
 	<!--<script src="https://code.angularjs.org/angular-1.0.0rc3.min.js"></script>-->
-	<script src="https://documentcloud.github.com/underscore/underscore-min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 	<script src="javascript/battleship.js"></script>

@@ -1,12 +1,20 @@
 /*navbar*/
 #myNavbar li a:hover{
-	background-color: #888;
+	background-color: #66B2FF;
+}
+.navbar-inverse {
+	background: #2c3e50;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+.navbar-inverse .navbar-brand {
+	color: white;
 }
 /*header*/
 
-
 header {
-	background-image:url("../image/ggb.jpg");
+	background:url("https://images.unsplash.com/photo-1450149632596-3ef25a62011a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5d5892d567b71e916212fa0f5c7a4420");
 	background-attachment: scroll;
 	background-position: center top;
 	-webkit-background-size:cover;
@@ -18,15 +26,15 @@ header {
 }
 
 header .intro-text {
-	padding-top:250px;
-	padding-bottom:200px
+	padding-top:300px;
+	padding-bottom:250px;
 }
 header .intro-text .intro-lead-in {
 	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-style:italic;
 	font-size:22px;
 	line-height:22px;
-	margin-bottom:25px
+	margin-bottom:25px;
 }
 
 header .intro-text .intro-heading {
@@ -36,6 +44,10 @@ header .intro-text .intro-heading {
 	font-size:50px;
 	line-height:50px;
 	margin-bottom:25px
+}
+
+header a:hover {
+	text-decoration: none;
 }
 
 /*section*/
@@ -75,7 +87,9 @@ section .section-color {
 }
 
 /*section-2 my work*/
-
+#work a:hover {
+	text-decoration: none;
+}
 /*section-3 my hobby*/
 
 #myCarousel div.carousel-inner .item {
