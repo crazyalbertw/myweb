@@ -1,0 +1,47 @@
+
+
+.mockInterview-title {
+    padding: 20px;
+}
+
+.questions {
+    margin: 0 20px 0 0;
+    background-color: lightblue;
+}
+
+#radioForm input, #radioForm span{
+    margin: 0 10px;
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 320px;
+    overflow-x: scroll;
+}
+.input-lg {
+    max-width: 600px;
+}
+.p-inline {
+    display: inline;
+}
+.required {
+    color: red;
+}
+.search-go-right {
+    width: 200px;
+    float: right;
+    margin: 10px 0;
+}
+.my-question, .my-comment {
+    width: 100%;
+}
+.add-go-right {
+    width: 300px;
+    float: right;
+    margin: 15px 0 15px 10px;
+}
+.searchForm {
+    margin: 10px 0;
+}
+.overallSection a:active {
+    background: deepskyblue;
+}

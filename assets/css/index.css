@@ -119,7 +119,10 @@ section .section-color {
 #myCarousel div.carousel-inner p {
 	color: floralwhite;
 }
-
+#gallery p{
+	font-size:20px;
+	margin: 5px auto;
+}
 /*footer*/
 
 footer {

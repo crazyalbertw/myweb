@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mock Interview</title>
+    <link rel="stylesheet" href="../css/mockInterview.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+</head>
+<body id="body">
+<div class="mockInterview" ng-app="mockInterview" ng-controller="mockInterviewCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="mockInterview-title">General Information</h2>
+                <form role="form" id="generalInformation">
+                    <div class="form-group">
+                        <label>Name <span class="required">*</span></label>
+                        <input type="text" class="form-control" name="UI.generalInformation.name" ng-model="UI.generalInformation.name" placeholder="Full Name" required>
+                        <!--UI is the whole page-->
+                    </div>
+                    <div class="form-group">
+                        <label>Objective <span class="required">*</span></label>
+                        <input type="text" class="form-control" name="UI.generalInformation.objective" ng-model="UI.generalInformation.objective" placeholder="Enter Objective" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Interview Company <span class="required">*</span></label>
+                        <input type="text" class="form-control" name="UI.generalInformation.interviewCompany" ng-model="UI.generalInformation.interviewCompany" placeholder="Enter Company" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Interview Date <span class="required">*</span></label>
+                        <input type="number" class="form-control" name="UI.generalInformation.interviewDate" ng-model="UI.generalInformation.interviewDate" placeholder="MM/DD/YYYY"required>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-offset-1 col-md-8">
+                <h2 class="mockInterview-title">Verbal Section</h2>
+                <div>
+                    <button class="btn questions" ng-class="{active:tab===1}">
+                        <a href ng-click="tab = 1" style="text-decoration: none; color: white;">General Question</a>
+                    </button>
+                    <button class="btn questions" ng-class="{active:tab===2}">
+                        <a href ng-click="tab = 2" style="text-decoration: none; color: white;">Behavioral Question</a>
+                    </button>
+                    <button class="btn questions" ng-class="{active:tab===3}">
+                        <a href ng-click="tab = 3" style="text-decoration: none; color: white;">Technical Question</a>
+                    </button>
+                    <br><br>
+                    <div ng-show="tab === 1" class="scrollable-menu">
+                        <fieldset ng-repeat="GQ in GQs">
+                            <!--GQ is General Question-->
+                            <h4>Question {{$index+1}}<span class="required">*</span></h4>
+                            <!--show index of GQ-->
+                            <form role="form">
+                                <div class="input-group my-question">
+                                    <input type="text" class="form-control"
+                                           placeholder="Type your own or choose a question"
+                                           ng-focus="GQ.dropdownOpenQuestion=true"
+                                           ng-blur="DelaySet(GQ,'dropdownOpenQuestion',false,400)"
+                                           ng-model="GQ.Question.name">
+                                    <!--dropdown open when focus input, dropdown close after 0.4sec for not focus-->
+                                    <div class="input-group-btn open">
+                                        <button type="button" class="btn btn-default dropdown-toggle" ng-click="GQ.dropdownOpenQuestion=!GQ.dropdownOpenQuestion"><span class="caret"></span></button>
+                                        <!--GQ.dropdownOpenQuestion=!GQ.dropdownOpenQuestion is self-made data-toggle, click dropdown open-->
+                                        <ul id="GQquestion-dropdown-menu" class="dropdown-menu scrollable-menu dropdown-menu-right" role="menu" ng-show="GQ.dropdownOpenQuestion">
+                                            <!--ng-show is true and dropdown open-->
+                                            <li ng-repeat="item in GQquestions | filter:GQ.Question.name" class="input-lg">
+                                                <a href="" ng-click="GQ.Question=ObjClone(item);GQ.dropdownOpenQuestion=false">{{item.name}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                            <h4>Rate the answer {{$index+1}}<span class="required">*</span></h4>
+                            <form id="radioForm" ng-init="GQ.rate=rates[1]">
+                                <input type="radio"
+                                       ng-model="GQ.rate" ng-value="rates[0]">{{rates[0].name}}
+                                <input type="radio"
+                                       ng-model="GQ.rate" ng-value="rates[1]">{{rates[1].name}}
+                                <input type="radio"
+                                       ng-model="GQ.rate" ng-value="rates[2]">{{rates[2].name}}
+                                <span>Points: {{(GQ.rate.point==undefined)?0:GQ.rate.point}}</span>
+                                <!--<span>Points: {{rateValue(GQ.rate.name)}}</span>-->
+                            </form>
+                            <h4>Comment {{$index+1}}<span class="required">*</span></h4>
+                            <form role="form">
+                                <div class="input-group my-comment">
+                                    <input type="text" class="form-control"
+                                           placeholder="Type your own or choose a comment"
+                                           ng-focus="GQ.dropdownOpenComment=true"
+                                           ng-blur="DelaySet(GQ,'dropdownOpenComment',false,400)"
+                                           ng-model="GQ.Comment.name">
+                                    <div class="input-group-btn open">
+                                        <button type="button" class="btn btn-default dropdown-toggle" ng-click="GQ.dropdownOpenComment=!GQ.dropdownOpenComment"><span class="caret"></span></button>
+                                        <ul id="GQcomment-dropdown-menu" class="dropdown-menu scrollable-menu dropdown-menu-right" role="menu" ng-show="GQ.dropdownOpenComment">
+                                            <li ng-repeat="item in comments | filter:GQ.Comment.name" class="input-lg">
+                                                <a href="" ng-click="GQ.Comment=ObjClone(item);GQ.dropdownOpenComment=false">{{item.name}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                            <br>
+                        </fieldset>
+                        <button class="btn btn-default add-go-right" ng-click="addNewGQ()">Add</button>
+                        <button class="btn btn-default add-go-right" ng-click="removeGQ()">Remove</button>
+                        <!--<div id="choicesDisplay">-->
+                        <!--{{ choices }}-->
+                        <!--</div>-->
+                    </div>
+
+                    <div ng-show="tab === 2" class="scrollable-menu">
+                        <fieldset ng-repeat="BQ in BQs">
+                            <!--BQ is General Question-->
+                            <h4>Question {{$index+1}}<span class="required">*</span></h4>
+                            <!--show index of BQ-->
+                            <form role="form">
+                                <div class="input-group my-question">
+                                    <input type="text" class="form-control"
+                                           placeholder="Type your own or choose a question"
+                                           ng-focus="BQ.dropdownOpenQuestion=true"
+                                           ng-blur="DelaySet(BQ,'dropdownOpenQuestion',false,400)"
+                                           ng-model="BQ.Question.name">
+                                    <div class="input-group-btn open">
+                                        <button type="button" class="btn btn-default dropdown-toggle" ng-click="BQ.dropdownOpenQuestion=!BQ.dropdownOpenQuestion"><span class="caret"></span></button>
+                                        <ul id="BQquestion-dropdown-menu" class="dropdown-menu scrollable-menu dropdown-menu-right" role="menu" ng-show="BQ.dropdownOpenQuestion">
+                                            <li ng-repeat="item in BQquestions | filter:BQ.Question.name" class="input-lg">
+                                                <a href="" ng-click="BQ.Question=ObjClone(item);BQ.dropdownOpenQuestion=false">{{item.name}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                            <h4>Rate the answer {{$index+1}}<span class="required">*</span></h4>
+                            <form class="radioForm" ng-init="BQ.rate=rates[1]">
+                                <input type="radio"
+                                       ng-model="BQ.rate" ng-value="rates[0]">{{rates[0].name}}
+                                <input type="radio"
+                                       ng-model="BQ.rate" ng-value="rates[1]">{{rates[1].name}}
+                                <input type="radio"
+                                       ng-model="BQ.rate" ng-value="rates[2]">{{rates[2].name}}
+                                <span>Points: {{(BQ.rate.point==undefined)?0:BQ.rate.point}}</span>
+                                <!--<span>Points: {{rateValue(BQ.rate.name)}}</span>-->
+                            </form>
+                            <h4>Comment {{$index+1}}<span class="required">*</span></h4>
+                            <form role="form">
+                                <div class="input-group my-comment">
+                                    <input type="text" class="form-control"
+                                           placeholder="Type your own or choose a comment"
+                                           ng-focus="BQ.dropdownOpenComment=true"
+                                           ng-blur="DelaySet(BQ,'dropdownOpenComment',false,400)"
+                                           ng-model="BQ.Comment.name">
+                                    <div class="input-group-btn open">
+                                        <button type="button" class="btn btn-default dropdown-toggle" ng-click="BQ.dropdownOpenComment=!BQ.dropdownOpenComment"><span class="caret"></span></button>
+                                        <ul id="BQcomment-dropdown-menu" class="dropdown-menu scrollable-menu dropdown-menu-right" role="menu" ng-show="BQ.dropdownOpenComment">
+                                            <li ng-repeat="item in comments | filter:BQ.Comment.name" class="input-lg">
+                                                <a href="" ng-click="BQ.Comment=ObjClone(item);BQ.dropdownOpenComment=false">{{item.name}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                            <br>
+                        </fieldset>
+                        <button class="btn btn-default add-go-right" ng-click="addNewBQ()">Add</button>
+                        <button class="btn btn-default add-go-right" ng-click="removeBQ()">Remove</button>
+                        <!--<div id="choicesDisplay">-->
+                        <!--{{ choices }}-->
+                        <!--</div>-->
+                    </div>
+                    <div ng-show="tab === 3" class="scrollable-menu">
+                        <fieldset ng-repeat="TQ in TQs">
+                            <!--TQ is General Question-->
+                            <h4>Question {{$index+1}}<span class="required">*</span></h4>
+                            <form role="form">
+                                <div class="input-group my-question">
+                                    <input type="text" class="form-control" placeholder="Type your own question" ng-model="TQ.Question" style="border-radius: 5px;">
+                                </div>
+                            </form>
+                            <h4>Rate the answer {{$index+1}}<span class="required">*</span></h4>
+                            <form class="radioForm" ng-init="TQ.rate=rates[1]">
+                                <input type="radio"
+                                       ng-model="TQ.rate" ng-value="rates[0]">{{rates[0].name}}
+                                <input type="radio"
+                                       ng-model="TQ.rate" ng-value="rates[1]">{{rates[1].name}}
+                                <input type="radio"
+                                       ng-model="TQ.rate" ng-value="rates[2]">{{rates[2].name}}
+                                <span>Points: {{(TQ.rate.point==undefined)?0:TQ.rate.point}}</span>
+                                <!--<span>Points: {{rateValue(TQ.rate.name)}}</span>-->
+                            </form>
+                            <h4>Comment {{$index+1}}<span class="required">*</span></h4>
+                            <form role="form">
+                                <div class="input-group my-comment">
+                                    <input type="text" class="form-control" placeholder="Type your own comment" ng-model="TQ.Comment" style="border-radius: 5px;">
+                                </div>
+                            </form>
+                            <br>
+                            <br>
+                        </fieldset>
+                        <button class="btn btn-default add-go-right" ng-click="addNewTQ()">Add</button>
+                        <button class="btn btn-default add-go-right" ng-click="removeTQ()">Remove</button>
+                        <!--<div id="choicesDisplay">-->
+                        <!--{{ choices }}-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="mockInterview-title">Overall Section</h2>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>General Question <br> (Selected Points/Max Points): {{GQSumOfGQAll()}}</td>
+                        <td>Behavioral Question <br> (Selected Points/Max Points): {{BQSumOfBQAll()}}</td>
+                        <td>Technical Question <br> (Selected Points/Max Points): {{TQSumOfTQAll()}}</td>
+                        <td>Verbal Section <br> (Selected Points/Max Points): {{verbalSectionSumOfVerbalSectionAll()}}</td>
+                    </tr>
+                </table>
+                <!--<form>-->
+                <!--<div class="form-group">-->
+                <!--<div class="input-group search-go-right">-->
+                <!--<div class="input-group-addon">-->
+                <!--<i class="fa fa-search"></i>-->
+                <!--</div>-->
+                <!--<input type="text" class="form-control" placeholder="Search" ng-model="searchContent">-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</form>-->
+
+                <table class="table table-bordered table-striped">
+
+                    <thead>
+                    <tr>
+                        <td>
+                            <!--<a href="#" ng-click="sortType = 'competency'; sortReverse = !sortReverse">-->
+                            Competency
+                            <!--<span ng-show="sortType == 'competency' && !sortReverse" class="fa fa-caret-down"></span>-->
+                            <!--<span ng-show="sortType == 'competency' && sortReverse" class="fa fa-caret-up"></span>-->
+                            <!--</a>-->
+                        </td>
+                        <td>
+                            Needs Work <br> (0 point)
+                        </td>
+                        <td>
+                            Good <br> (1 point)
+                        </td>
+                        <td>
+                            Excellent <br> (2 points)
+                        </td>
+                        <td>
+                            Points
+                        </td>
+                    </tr>
+                    </thead>
+
+                    <!--<tbody class="overallSection">-->
+                    <!--<tr ng-repeat="comment in overall | orderBy:sortType:sortReverse | filter:searchContent">-->
+                    <!--<td>{{ comment.competency }}</td>-->
+                    <!--<td ng-click="comment.select=='bad'? (comment.select=''):(comment.select='bad')" ng-class="comment.select=='bad'? 'success':''">{{ comment.bad }}</td>-->
+                    <!--<td ng-click="comment.select='good'">{{ comment.good }}</td>-->
+                    <!--<td ng-click="comment.select='excellent'">{{ comment.excellent }}</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+
+                    <tbody class="overallSection" ng-init="UI.overallData=calcCommentGradeOverall(overall)">
+                    <!--<tr ng-repeat="aspect in overall | orderBy:sortType:sortReverse | filter:searchContent">-->
+                    <tr ng-repeat="aspect in overall">
+                        <td>{{ aspect.competency;}}</td>
+                        <td ng-repeat="grade in aspect.grade track by $index"
+                            ng-click="aspect.select==$index? (aspect.select=-100):(aspect.select=$index);UI.overallData=calcCommentGradeOverall(overall)"
+                            ng-class="aspect.select==$index? 'success':''">
+                            {{ grade.comment }}
+                        </td>
+                        <td>{{(aspect.select==-100||aspect.select==undefined)?'unselected':aspect.select;}}</td>
+                    </tr>
+
+                    <tr>
+                        <td >{{results.competency}}</td>
+                        <td ng-click="resultClick == results.grade[0].comment?(resultClick=''):(resultClick = results.grade[0].comment)"
+                            ng-class="resultClick == results.grade[0].comment? 'success':''">{{results.grade[0].comment}}</td>
+                        <td ng-click="resultClick == results.grade[1].comment?(resultClick=''):(resultClick = results.grade[1].comment)"
+                            ng-class="resultClick == results.grade[1].comment? 'success':''">{{results.grade[1].comment}}</td>
+                        <td ng-click="resultClick == results.grade[2].comment?(resultClick=''):(resultClick = results.grade[2].comment)"
+                            ng-class="resultClick == results.grade[2].comment? 'success':''">{{results.grade[2].comment}}</td>
+                        <!--<td >{{UI.overallData.statistic[2]}}</td>-->
+                        <td >{{totalScore()}}</td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="../js/mockInterview.js"></script>
+</body>
+</html>
