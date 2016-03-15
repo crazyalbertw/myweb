@@ -11,13 +11,13 @@
 	<meta name="author" content="albert_wang">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>AlbeeSpace</title>
+	<title>AlSpace</title>
 
 	<!-- Updated Bootstrap Core CSS 3.3.6-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 	<!--Custom css-->
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
 	<!-- Updated Custom font 4.5.0-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,28 +48,37 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!--hamburger-->
-					<a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-fort-awesome"></i> AlbeeSpace</a>
+					<a class="navbar-brand page-scroll menuButton" href="#page-top" id="navbar_head"><i class="fa fa-fort-awesome"></i> AlSpace</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li>
-							<a class="page-scroll" href="#me">Me</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#work">My Work</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#hobby">My Hobbies</a>
-						</li>
-					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a class="page-scroll" href="#">Sign Up</a>
+							<a class="page-scroll menuButton" href="#me">Me</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle menuButton" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Work <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#work" class="menuButton">Academy Website</a></li>
+								<li><a href="#" class="menuButton">Another action</a></li>
+								<li><a href="#" class="menuButton">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#" class="menuButton">Separated link</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#" class="menuButton">One more separated link</a></li>
+							</ul>
 						</li>
 						<li>
-							<a class="page-scroll" href="#">Login</a>
+							<a class="page-scroll menuButton" href="#hobby">My Hobbies</a>
 						</li>
 					</ul>
+					<!--<ul class="nav navbar-nav navbar-right">-->
+						<!--<li>-->
+							<!--<a class="page-scroll" href="#">Sign Up</a>-->
+						<!--</li>-->
+						<!--<li>-->
+							<!--<a class="page-scroll" href="#">Login</a>-->
+						<!--</li>-->
+					<!--</ul>-->
 				</div>
 			</div>
 		</nav>
@@ -128,27 +137,67 @@
 				</div>
 			</div>
 			<div class="row text-center">
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<a href="http://focuskpiwebdev.github.io/focusKPIAcademy" id="academyWebsite">
 						<div class="thumbnail">
-							<img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" alt="">
+							<img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?dpr=1&fit=crop&fm=jpg&h=720&q=50&w=960" alt="">
 								Academy Website
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<a href="#game" data-toggle="modal">
 						<div class="thumbnail">
-							<img src="https://images.unsplash.com/photo-1457694716743-eb419114c894?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" alt="">
+							<img src="https://images.unsplash.com/photo-1457694716743-eb419114c894?dpr=1&fit=crop&fm=jpg&h=720&q=50&w=960" alt="">
 							Battle-ship game
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<a href="#todolist" data-toggle="modal">
 						<div class="thumbnail">
-							<img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" alt="">
-							Todo-list
+							<img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=1&fit=crop&fm=jpg&h=720&q=50&w=960" alt="">
+							Todo-list (AngularJS)
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<a href="assets/html/blog.html" id="blog">
+						<div class="thumbnail">
+							<img src="images/blog.jpg" alt="">
+							Blog
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<a href="assets/html/colorGame.html" id="colorGame">
+						<div class="thumbnail">
+							<img src="images/colorGame.png" alt="">
+							Color Game
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<a href="assets/html/scoreKeeper.html" id="scoreKeeper">
+						<div class="thumbnail">
+							<img src="images/scoreKeeper.png" alt="">
+							Score Keeper
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<a href="assets/html/soundEffect.html" id="soundEffect">
+						<div class="thumbnail">
+							<img src="images/soundEffect.jpg" alt="">
+							Sound Effect
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<a href="assets/html/todos.html" id="todos">
+						<div class="thumbnail">
+							<img src="images/todos.png" alt="">
+							Todo-list (jQuery)
 						</div>
 					</a>
 				</div>
@@ -185,7 +234,7 @@
 									<div class="carousel-inner" role="listbox">
 										<div class="item active">
 											<a href="#comics" data-toggle="modal">
-												<img src="image/11.jpg" alt="">
+												<img src="images/11.jpg" alt="">
 											</a>
 											<div class="carousel-caption">
 												<h3>Comics</h3>
@@ -194,7 +243,7 @@
 										</div>
 										<div class="item">
 											<a href="#nba" data-toggle="modal">
-												<img src="image/13_new.png" alt="">
+												<img src="images/13_new.png" alt="">
 											</a>
 											<div class="carousel-caption">
 												<h3>Basketball</h3>
@@ -203,7 +252,7 @@
 										</div>
 										<div class="item">
 											<a href="#fitness" data-toggle="modal">
-												<img src="image/14_new.jpg" alt="">
+												<img src="images/14_new.jpg" alt="">
 											</a>
 											<div class="carousel-caption">
 												<h3>Fitness</h3>
@@ -238,13 +287,13 @@
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="col-md-4"></div>
-				<div class="col-md-4">
+				<div class="col-md-4 icons">
 					<ul class="list-inline social-buttons">
-						<li><a href="#"><i class="fa fa-twitter"></i></a>
+						<li><a href="https://www.instagram.com/crazeeael/"><i class="fa fa-instagram"></i></a>
 						</li>
-						<li><a href="#"><i class="fa fa-facebook"></i></a>
+						<li><a href="https://www.facebook.com/boyang.wang.71"><i class="fa fa-facebook"></i></a>
 						</li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a>
+						<li><a href="https://www.linkedin.com/in/boyangwang"><i class="fa fa-linkedin"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -460,7 +509,7 @@
 							</p>
 						</div>
 						<div class="col-sm-12">
-							<img src="image/kobe.jpg" alt="kobe">
+							<img src="images/kobe.jpg" alt="kobe">
 							<h3>My Message</h3>
 							<p>To my hero Kobe, <br>
 								I started to follow you when <br>
@@ -507,7 +556,7 @@
 	</div>
 
 	<!-- updated jQuery 2.2.1 -->
-	<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -515,9 +564,9 @@
 	<!-- Angular JavaScript -->
 	<!--<script src="https://code.angularjs.org/angular-1.0.0rc3.min.js"></script>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
-	<script src="javascript/battleship.js"></script>
-	<script src="javascript/todo.js"></script>
+	<script src="assets/js/index.js"></script>
+	<script src="assets/js/battleship.js"></script>
+	<script src="assets/js/todo.js"></script>
 
 </body>
 

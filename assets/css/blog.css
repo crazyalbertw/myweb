@@ -1,0 +1,44 @@
+body {
+    border: 20px solid #bdc3c7;
+    padding: 20px;
+    max-width: 700px;
+    width:80%;
+    margin: 20px auto;
+    font-family: Source Sans Pro;
+}
+h2 {
+    text-transform: capitalize;
+    color: #2c3e50;
+    font-size: 2.0rem;
+}
+.date {
+    color: #3498db;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    /*rem is the relative size for root size*/
+}
+.quote {
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+}
+hr {
+    height: 30px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+.post {
+    margin-bottom: 30px;
+}
+
