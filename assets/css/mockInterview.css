@@ -9,7 +9,13 @@
     background-color: lightblue;
 }
 
-#radioForm input, #radioForm span{
+#GQRadioForm input, #GQRadioForm span{
+    margin: 0 10px;
+}
+#BQRadioForm input, #BQRadioForm span{
+    margin: 0 10px;
+}
+#TQRadioForm input, #TQRadioForm span{
     margin: 0 10px;
 }
 .scrollable-menu {

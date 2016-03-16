@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mock Interview</title>
+    <title>MI</title>
     <link rel="stylesheet" href="../css/mockInterview.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <h2 class="mockInterview-title">General Information</h2>
+                <h2 class="mockInterview-title">GI</h2>
                 <form role="form" id="generalInformation">
                     <div class="form-group">
                         <label>Name <span class="required">*</span></label>
@@ -34,16 +34,16 @@
                 </form>
             </div>
             <div class="col-md-offset-1 col-md-8">
-                <h2 class="mockInterview-title">Verbal Section</h2>
+                <h2 class="mockInterview-title">VS</h2>
                 <div>
                     <button class="btn questions" ng-class="{active:tab===1}">
-                        <a href ng-click="tab = 1" style="text-decoration: none; color: white;">General Question</a>
+                        <a href ng-click="tab = 1" style="text-decoration: none; color: white;">GQ</a>
                     </button>
                     <button class="btn questions" ng-class="{active:tab===2}">
-                        <a href ng-click="tab = 2" style="text-decoration: none; color: white;">Behavioral Question</a>
+                        <a href ng-click="tab = 2" style="text-decoration: none; color: white;">BQ</a>
                     </button>
                     <button class="btn questions" ng-class="{active:tab===3}">
-                        <a href ng-click="tab = 3" style="text-decoration: none; color: white;">Technical Question</a>
+                        <a href ng-click="tab = 3" style="text-decoration: none; color: white;">TQ</a>
                     </button>
                     <br><br>
                     <div ng-show="tab === 1" class="scrollable-menu">
@@ -72,7 +72,7 @@
                                 </div>
                             </form>
                             <h4>Rate the answer {{$index+1}}<span class="required">*</span></h4>
-                            <form id="radioForm" ng-init="GQ.rate=rates[1]">
+                            <form id="GQRadioForm" ng-init="GQ.rate=rates[1]">
                                 <input type="radio"
                                        ng-model="GQ.rate" ng-value="rates[0]">{{rates[0].name}}
                                 <input type="radio"
@@ -133,7 +133,7 @@
                                 </div>
                             </form>
                             <h4>Rate the answer {{$index+1}}<span class="required">*</span></h4>
-                            <form class="radioForm" ng-init="BQ.rate=rates[1]">
+                            <form id="BQRadioForm" ng-init="BQ.rate=rates[1]">
                                 <input type="radio"
                                        ng-model="BQ.rate" ng-value="rates[0]">{{rates[0].name}}
                                 <input type="radio"
@@ -180,7 +180,7 @@
                                 </div>
                             </form>
                             <h4>Rate the answer {{$index+1}}<span class="required">*</span></h4>
-                            <form class="radioForm" ng-init="TQ.rate=rates[1]">
+                            <form id="TQRadioForm" ng-init="TQ.rate=rates[1]">
                                 <input type="radio"
                                        ng-model="TQ.rate" ng-value="rates[0]">{{rates[0].name}}
                                 <input type="radio"
@@ -210,13 +210,13 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h2 class="mockInterview-title">Overall Section</h2>
+                <h2 class="mockInterview-title">OS</h2>
                 <table class="table table-bordered table-striped">
                     <tr>
-                        <td>General Question <br> (Selected Points/Max Points): {{GQSumOfGQAll()}}</td>
-                        <td>Behavioral Question <br> (Selected Points/Max Points): {{BQSumOfBQAll()}}</td>
-                        <td>Technical Question <br> (Selected Points/Max Points): {{TQSumOfTQAll()}}</td>
-                        <td>Verbal Section <br> (Selected Points/Max Points): {{verbalSectionSumOfVerbalSectionAll()}}</td>
+                        <td>GQ <br> (Selected Points/Max Points): {{GQSumOfGQAll()}}</td>
+                        <td>BQ <br> (Selected Points/Max Points): {{BQSumOfBQAll()}}</td>
+                        <td>TQ <br> (Selected Points/Max Points): {{TQSumOfTQAll()}}</td>
+                        <td>VS <br> (Selected Points/Max Points): {{verbalSectionSumOfVerbalSectionAll()}}</td>
                     </tr>
                 </table>
                 <!--<form>-->

@@ -10,21 +10,21 @@ angular.module('mockInterview', []).controller('mockInterviewCtrl',
         $scope.tab = 1; // ng-init="tab = 1"
 
         $scope.GQquestions = [
-            {name:'Tell me about yourself'},
-            {name:'What motivates you to do your best work?'},
-            {name:'What have been your biggest accomplishments while working or while at school?'},
-            {name:'What are your weaknesses?'},
-            {name:'What are your career goals?'},
-            {name:'Why did you leave your last job?'},
-            {name:'What are some specific examples of work and volunteer experiences you have had that support your qualification?'},
-            {name:'Why do you want this job?'},
-            {name:'What skills do you bring to this position?'},
-            {name:'Why should I hire you?'},
-            {name:'What is your salary expectation?'},
-            {name:'Do you think your compensation is a good indication of your qualification?'},
-            {name:'Do you plan to continue your education?'},
-            {name:'What does success mean to you?'},
-            {name:'Are you willing to travel or relocate?'}
+            {name:'aaa'},
+            {name:'bbb'},
+            {name:'ccc'},
+            {name:'ddd'},
+            {name:'eee'},
+            {name:'fff'},
+            {name:'ggg'},
+            {name:'hhh'},
+            {name:'iii'},
+            {name:'jjj'},
+            {name:'kkk'},
+            {name:'lll'},
+            {name:'mmm'},
+            {name:'nnn'},
+            {name:'ooo'}
         ];
         //$scope.GQQuestion  = '';  //General Question Search
         //$scope.changeQuestion = function(newQuestion) {
@@ -32,21 +32,21 @@ angular.module('mockInterview', []).controller('mockInterviewCtrl',
         //};
 
         $scope.BQquestions = [
-            {name:'Tell me about a time when it was necessary to admit to others that you had made a mistake. How did you handle that?'},
-            {name:'Can you describe a past situation at work that led you to grow as a person?'},
-            {name:'How do you react when asked to do something beynd your capabilities?'},
-            {name:'Tell me about a time you were under a lot of pressure. What was going on, and how did you go through it?'},
-            {name:'If you were hiring a person for this position, what qualities would you look for?'},
-            {name:'Please describe your previous work experience/work environment/work achievement?'},
-            {name:'Can you tell me about a time when you were faced with a major obstacle (work or otherwise) and how you overcame it?'},
-            {name:'Describe a solution when you disagree with your supervisor. What would you do?'},
-            {name:'Describe a time when you set your sights too high (or too low).'},
-            {name:'Please talk about a time when you had to work closely with someone whose personality was very different from yours.'},
-            {name:'Describe a long-term project you were assigned or managed. How did you keep everything moving along in a timely manner?'},
-            {name:'Please give me an example how you can successfully persuade someone.'},
-            {name:'How do you ensure to meet your objectives if you need to manage numerous responsibilities? What skills would you use?'},
-            {name:'What would you do if you were asked to do something is not worth doing?'},
-            {name:'Tell me about a time you need to get information from someone who isn\'t very responsive. What would you do?'}
+            {name:'aaa'},
+            {name:'bbb'},
+            {name:'ccc'},
+            {name:'ddd'},
+            {name:'eee'},
+            {name:'fff'},
+            {name:'ggg'},
+            {name:'hhh'},
+            {name:'iii'},
+            {name:'jjj'},
+            {name:'kkk'},
+            {name:'lll'},
+            {name:'mmm'},
+            {name:'nnn'},
+            {name:'ooo'}
         ];
         //$scope.BQQuestion  = '';
         //$scope.switchQuestion = function(newQuestion) {
@@ -92,12 +92,12 @@ angular.module('mockInterview', []).controller('mockInterviewCtrl',
 
 
         $scope.comments = [
-            {name:'Well-constructed response with specific examples'},
-            {name:'Honest response; clearly described the situation'},
-            {name:'Professional; clear manner of speaking'},
-            {name:'Lack of example or evidence, too general'},
-            {name:'Unclear or ambiguous'},
-            {name:'Unconvincing, irrelevant or unprepared'}
+            {name:'good'},
+            {name:'nice'},
+            {name:'poor'},
+            {name:'need improve'},
+            {name:'good fit'},
+            {name:'excellent'}
         ];
         $scope.GQComment  = '';
         $scope.changeComment = function(newComment) {
@@ -232,57 +232,57 @@ angular.module('mockInterview', []).controller('mockInterviewCtrl',
             {
                 select:-100,
                 competency: 'Impression',
-                grade: [{comment:'--Too casual or inappropriate attire for the interview'},
-                    {comment:'--Excessive make-up, jewelry or grooming for the position'},
-                    {comment:'--Neat and clean --Immaculate attire and grooming for the position'}]
+                grade: [{comment:'--some comments for Needs Work'},
+                    {comment:'--some comments for Good'},
+                    {comment:'--some comments for Excellent'}]
             },
             {
                 competency: 'Expression',
-                grade: [{comment:'--Incomplete conversation--Short, choppy answers'},
-                    {comment:'--Speaks clearly, but does not expresses ideas adequately'},
-                    {comment:'--Exceptional --Speaks clearly, concisely --Ideas are well thought-out'}]
+                grade: [{comment:'--some comments for Needs Work'},
+                    {comment:'--some comments for Good'},
+                    {comment:'--some comments for Excellent'}]
             },
             {
                 competency: 'Job Knowledge',
-                grade: [{comment:'--Inadequate knowledge of both position and company --Seems to make up information'},
-                    {comment:'--Satisfactory --Some knowledge of either the position or company'},
-                    {comment:'--Excellent --Clear understanding of the position and details of company'}]
+                grade: [{comment:'--some comments for Needs Work'},
+                    {comment:'--some comments for Good'},
+                    {comment:'--some comments for Excellent'}]
             },
             {
                 competency: 'General Attitude',
-                grade: [{comment:'--Passive, shy and nervous --No eye contact or smile'},
-                    {comment:'--Lack of confidence and direction --Poor eye contact and weak smile'},
-                    {comment:'--Shows highly confident and respects to the interviewers --Good eye contact and gesture'}]
+                grade: [{comment:'--some comments for Needs Work'},
+                    {comment:'--some comments for Good'},
+                    {comment:'--some comments for Excellent'}]
             },
             {
                 competency: 'Responses',
-                grade: [{comment:'--Gives simple responses of "yes" or "no" --Provides unsure answers'},
-                    {comment:'--Gives rehearsed answers --Fails to elaborate or explain'},
-                    {comment:'--Listens closely to the questions --Gives well-constructed and genuine responses'}]
+                grade: [{comment:'--some comments for Needs Work'},
+                    {comment:'--some comments for Good'},
+                    {comment:'--some comments for Excellent'}]
             },
             {
                 competency: 'Communication',
-                grade: [{comment:'--Speaks too quietly or loudly --Lots of “umms” or fidgeting --Poor grammar and diction'},
-                    {comment:'--Mumbles occasionally --Conversation stops and starts at times --Distracting grammar and slangs'},
-                    {comment:'--Speaks clearly at all times --Easy to converse with --Uses proper diction and grammar'}]
+                    grade: [{comment:'--some comments for Needs Work'},
+                {comment:'--some comments for Good'},
+                {comment:'--some comments for Excellent'}]
             },
             {
                 competency: 'Skills and strengths',
-                grade: [{comment:'--Relatively weak skills or strengths'},
-                    {comment:'--Personal strengths and skills that do not match company’s needs'},
-                    {comment:'--Excellent skills and strengths that can benefit the company'}]
+                grade: [{comment:'--some comments for Needs Work'},
+                    {comment:'--some comments for Good'},
+                    {comment:'--some comments for Excellent'}]
             },
             {
                 competency: 'Asking Questions',
-                grade: [{comment:'--No questions asked or asks questions that are not related to the job'},
-                    {comment:'--Asks questions relating to the desired position, company or business'},
-                    {comment:'----Asks related questions --Shows evidence that applicant has researched the company or business'}]
+                grade: [{comment:'--some comments for Needs Work'},
+                    {comment:'--some comments for Good'},
+                    {comment:'--some comments for Excellent'}]
             },
             {
                 competency: 'Closing',
-                grade: [{comment:'--Lack of interest in job --No closing'},
-                    {comment:'--Shows interest of the job with expectation of high salary and good benefits'},
-                    {comment:'--Interested in the position and enthusiastic about the interview --Closing refers to strengths and skills'}]
+                grade: [{comment:'--some comments for Needs Work'},
+                    {comment:'--some comments for Good'},
+                    {comment:'--some comments for Excellent'}]
             }
         ];
         $scope.results =
