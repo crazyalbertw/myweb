@@ -1,5 +1,8 @@
 #container {
-    margin: 50px auto;
+    margin: auto;
+    /*margin-top: 50%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
     max-width: 600px;
 }
 

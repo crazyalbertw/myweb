@@ -14,9 +14,10 @@
 	<title>AlSpace</title>
 
 	<!-- Updated Bootstrap Core CSS 3.3.6-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
 
 	<!--Custom css-->
+	<link rel="stylesheet" href="assets/css/scrolling-nav.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
 	<!-- Updated Custom font 4.5.0-->
@@ -58,17 +59,17 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle menuButton" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Work <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#work" class="menuButton">Academy Website</a></li>
-								<li><a href="#work" class="menuButton">MockInterview (AngularJS)</a></li>
-								<li><a href="#work" class="menuButton">Sound Effect (paper.js, howler.js)</a></li>
+								<!--<li><a href="#work" class="menuButton">Academy Website</a></li>-->
+								<li><a href="#mockInterview" class="page-scroll menuButton">Modified MI (AngularJS)</a></li>
+								<li><a href="#soundEffect" class="page-scroll menuButton">Sound Effect (paper.js, howler.js)</a></li>
+								<li><a href="#colorGame" class="page-scroll menuButton">Color Game</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#work" class="menuButton">Color Game</a></li>
-								<li><a href="#work" class="menuButton">Battle-ship Game</a></li>
-								<li><a href="#work" class="menuButton">Todo-list (jQuery)</a></li>
+								<li><a href="#battleShipGame" class="page-scroll menuButton">Battle-ship Game</a></li>
+								<li><a href="#todos" class="page-scroll menuButton">Todo-list (jQuery)</a></li>
+								<li><a href="#todos2" class="page-scroll menuButton">Todo-list (AngularJS)</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#work" class="menuButton">Todo-list (AngularJS)</a></li>
-								<li><a href="#work" class="menuButton">Score Keeper</a></li>
-								<li><a href="#work" class="menuButton">Blog</a></li>
+								<li><a href="#scoreKeeper" class="page-scroll menuButton">Score Keeper</a></li>
+								<li><a href="#blog" class="page-scroll menuButton">Blog</a></li>
 							</ul>
 						</li>
 						<li>
@@ -174,7 +175,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<a href="#game" data-toggle="modal">
+					<a href="#game" data-toggle="modal" id="battleShipGame">
 						<div class="thumbnail">
 							<img src="https://images.unsplash.com/photo-1457694716743-eb419114c894?dpr=1&fit=crop&fm=jpg&h=720&q=50&w=960" alt="">
 							<p>Battle-ship Game</p>
@@ -190,7 +191,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<a href="#todolist" data-toggle="modal">
+					<a href="#todolist" data-toggle="modal" id="todos2">
 						<div class="thumbnail">
 							<img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=1&fit=crop&fm=jpg&h=720&q=50&w=960" alt="">
 							<p>Todo-list (AngularJS)</p>
@@ -228,11 +229,11 @@
 					<h3 class="section-subheading section-color">A few things I like to do</h3>
 				</div>
 			</div>
-			<div class="row text-center">
-				<div class="col-lg-12">
-					<div class="picture_slide">
-						<div class="container">
-							<div class="col-sm-12 col-md-offset-2 col-md-8">
+		</div>
+			<!--<div class="row text-center">-->
+				<!--<div class="col-lg-12">-->
+					<!--<div class="picture_slide">-->
+						<div id="container">
 								<div id="myCarousel" class="carousel slide" data-ride="carousel">
 									<!-- Indicators -->
 									<ol class="carousel-indicators">
@@ -246,7 +247,7 @@
 									<div class="carousel-inner" role="listbox">
 										<div class="item active">
 											<a href="#comics" data-toggle="modal">
-												<img src="images/11.jpg" alt="">
+												<img src="images/onePiece.jpg" alt="">
 											</a>
 											<div class="carousel-caption">
 												<h3>Comics</h3>
@@ -255,7 +256,7 @@
 										</div>
 										<div class="item">
 											<a href="#nba" data-toggle="modal">
-												<img src="images/13_new.png" alt="">
+												<img src="images/kobeNew.jpg" alt="">
 											</a>
 											<div class="carousel-caption">
 												<h3>Basketball</h3>
@@ -264,7 +265,7 @@
 										</div>
 										<div class="item">
 											<a href="#fitness" data-toggle="modal">
-												<img src="images/14_new.jpg" alt="">
+												<img src="images/fitness.jpg" alt="">
 											</a>
 											<div class="carousel-caption">
 												<h3>Fitness</h3>
@@ -275,20 +276,20 @@
 
 									<!-- Left and right controls -->
 									<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-										<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+										<span class="icon-prev" aria-hidden="true"></span>
 										<span class="sr-only">Previous</span>
 									</a>
 									<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span class="icon-next" aria-hidden="true"></span>
 										<span class="sr-only">Next</span>
 									</a>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+
 	</section>
 
 
@@ -326,11 +327,19 @@
 			</div>
 			<div class="container">
 				<div class="sub-title">
-					<h2>Battle Ship</h2>
+					<h2>Battle Ship Game</h2>
 					<br>
-					<h3>Explanation: There are three battleships randomly settled in the field.
-						<br>
-						Each one has a length of 3 (Ex: a3, a4, a5 is one ship length).</h3>
+					<h4>Game Explanation: </h4>
+					<h4>
+						There are <strong>3</strong> battleships randomly settled in the field.
+					</h4>
+					<h4>
+						Each battleship has a length of <strong>3</strong> (e.g., a3, a4, a5 is a ship; b2, c2, d2 is a ship).
+					</h4>
+					<h4>
+						Type table location (e.g., a1, b3) in the form and hit "Enter" to fire
+					</h4>
+					<br>
 				</div>
 				<div class="col-xs-12 col-md-offset-2 col-md-8">
 					<div class="battleship">
@@ -373,7 +382,7 @@
 					</div>
 				</div>
 			</div>
-			<button type="button" class="btn btn-primary" data-dismiss="modal">
+			<button type="button" class="btn btn-primary closeButton" data-dismiss="modal">
 				<i class="fa fa-times"></i> Close Project
 				<!--i fa fa-times -> font awesome icon x-->
 			</button>
@@ -413,7 +422,7 @@
 					</div>
 				</div>
 			</div>
-			<button type="button" class="btn btn-primary" data-dismiss="modal">
+			<button type="button" class="btn btn-primary closeButton" data-dismiss="modal">
 				<i class="fa fa-times"></i> Close Project
 				<!--i fa fa-times -> font awesome icon x-->
 			</button>
@@ -438,7 +447,7 @@
 					<h3>One piece is one of my favorite Comics and the only one I am still following.</h3>
 				</div>
 			</div>
-			<button type="button" class="btn btn-primary" data-dismiss="modal">
+			<button type="button" class="btn btn-primary closeButton" data-dismiss="modal">
 				<i class="fa fa-times"></i> Close Project
 				<!--i fa fa-times -> font awesome icon x-->
 			</button>
@@ -534,7 +543,7 @@
 						</div>
 					</div>
 				</div>
-				<button type="button" class="btn btn-primary" data-dismiss="modal">
+				<button type="button" class="btn btn-primary closeButton" data-dismiss="modal">
 					<i class="fa fa-times"></i> Close Project
 					<!--i fa fa-times -> font awesome icon x-->
 				</button>
@@ -559,7 +568,7 @@
 				<div class="sub-title">
 					<h3>I wanna build 8 packs of abs.</h3>
 				</div>
-				<button type="button" class="btn btn-primary" data-dismiss="modal">
+				<button type="button" class="btn btn-primary closeButton" data-dismiss="modal">
 					<i class="fa fa-times"></i> Close Project
 					<!--i fa fa-times -> font awesome icon x-->
 				</button>
@@ -568,14 +577,19 @@
 	</div>
 
 	<!-- updated jQuery 2.2.1 -->
-	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="assets/js/lib/jquery-2.2.1.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="assets/css/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="assets/js/lib/jquery.easing.min.js"></script>
+	<script src="assets/js/lib/scrolling-nav.js"></script>
 
 	<!-- Angular JavaScript -->
-	<!--<script src="https://code.angularjs.org/angular-1.0.0rc3.min.js"></script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="assets/js/lib/angular.min.js"></script>
+
+	<!--Custom JavaScript-->
 	<script src="assets/js/index.js"></script>
 	<script src="assets/js/battleship.js"></script>
 	<script src="assets/js/todo.js"></script>

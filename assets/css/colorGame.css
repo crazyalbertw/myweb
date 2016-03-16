@@ -34,6 +34,11 @@ h1 {
 #colorDisplay {
     font-size: 2em;
 }
+@media (max-width:550px){
+    #colorDisplay {
+        font-size: 1em;
+    }
+}
 span {
     color: white;
 }
