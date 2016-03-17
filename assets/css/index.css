@@ -60,7 +60,7 @@ header a:hover {
 /*section*/
 
 section {
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 section h2.section-heading {
@@ -75,7 +75,7 @@ section h3.section-subheading {
 	text-transform:none;
 	font-style:italic;
 	font-weight:400;
-	margin-bottom:75px
+	margin-bottom:50px
 }
 
 section .section-color {
@@ -94,7 +94,32 @@ section .section-color {
 .me-color {
 	color: #555;
 }
+.beiJingLogoFoggy {
+	float: left;
+	width: 100px;
+	height: 100px;
+	background: #EFEFEF;
+	text-align: center;
+	line-height: 100px;
+	/*make text center in the background*/
+	color:#E2E2E2;
+	font-size: 18px;
+	font-weight: 600;
+	text-shadow: 1px 1px 2px #E2E2E2;
+}
 
+.beiJingLogo {
+	float:left;
+	width: 100px;
+	height: 100px;
+	background: lightskyblue;
+	text-align: center;
+	line-height: 100px;
+	/*make text center in the background*/
+	color:black;
+	font-size: 18px;
+	font-weight: 600;
+}
 /*section-2 my work*/
 #work a:hover {
 	text-decoration: none;

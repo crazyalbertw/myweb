@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64643c1d-2e69-4132-908b-9050b0227ac5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.6-dist/css/bootstrap.min.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/index.css" afterPath="$PROJECT_DIR$/assets/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/html/mockInterview.html" afterPath="$PROJECT_DIR$/assets/html/mockInterview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="myweb.iws" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="todos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/html/todos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4166665">
+            <state vertical-scroll-proportion="-8.041667">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
             </state>
@@ -40,7 +38,7 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-104.166664">
+            <state vertical-scroll-proportion="0.0">
               <caret line="6264" column="40" selection-start-line="6264" selection-start-column="40" selection-end-line="6264" selection-end-column="40" />
               <folding />
             </state>
@@ -50,8 +48,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.9166665">
-              <caret line="577" column="0" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.5882354">
+              <caret line="131" column="59" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -60,7 +58,7 @@
       <file leaf-file-name="mockInterview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/html/mockInterview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4166665">
+            <state vertical-scroll-proportion="-6.7916665">
               <caret line="299" column="77" selection-start-line="299" selection-start-column="77" selection-end-line="299" selection-end-column="77" />
               <folding />
             </state>
@@ -70,8 +68,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54989815">
-              <caret line="333" column="10" selection-start-line="333" selection-start-column="10" selection-end-line="333" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.2918455">
+              <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -80,7 +78,7 @@
       <file leaf-file-name="scoreKeeper.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/html/scoreKeeper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.25">
+            <state vertical-scroll-proportion="-15.541667">
               <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding />
             </state>
@@ -90,7 +88,7 @@
       <file leaf-file-name="soundEffect.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/html/soundEffect.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-133.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="213" column="7" selection-start-line="213" selection-start-column="7" selection-end-line="213" selection-end-column="7" />
               <folding />
             </state>
@@ -100,7 +98,7 @@
       <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/html/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.541667">
+            <state vertical-scroll-proportion="0.0">
               <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding />
             </state>
@@ -110,7 +108,7 @@
       <file leaf-file-name="colorGame.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/html/colorGame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding />
             </state>
@@ -139,6 +137,7 @@
       <push-target-info repo="$PROJECT_DIR$" source="dev_albert_myweb5" target-remote="origin" target-branch="gh-pages" />
       <push-target-info repo="$PROJECT_DIR$" source="dev_albert_myweb6" target-remote="origin" target-branch="gh-pages" />
       <push-target-info repo="$PROJECT_DIR$" source="dev_albert_myweb7" target-remote="origin" target-branch="gh-pages" />
+      <push-target-info repo="$PROJECT_DIR$" source="dev_albert_myweb8" target-remote="origin" target-branch="gh-pages" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -190,8 +189,8 @@
         <option value="$PROJECT_DIR$/assets/css/scoreKeeper.css" />
         <option value="$PROJECT_DIR$/assets/css/colorGame.css" />
         <option value="$PROJECT_DIR$/assets/html/todos.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/html/mockInterview.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/index.css" />
       </list>
     </option>
@@ -202,8 +201,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="357" />
-    <option name="y" value="187" />
+    <option name="x" value="298" />
+    <option name="y" value="506" />
     <option name="width" value="1560" />
     <option name="height" value="777" />
   </component>
@@ -232,6 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -283,49 +283,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap-3.3.6-dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -510,7 +469,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458166135897</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="boostrap use cdn&#10;">
+      <created>1458171377789</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1458171377789</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -523,7 +488,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="357" y="187" width="1560" height="777" extended-state="0" />
+    <frame x="298" y="506" width="1560" height="777" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18063678" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -531,7 +496,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270073" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20669578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4510949" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -592,7 +557,8 @@
     <MESSAGE value="add explanation for soundEffect" />
     <MESSAGE value="modified mockInterview page and remove academy website" />
     <MESSAGE value="edit responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit responsive" />
+    <MESSAGE value="boostrap use cdn&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="boostrap use cdn&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -738,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,13 +826,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
@@ -886,23 +850,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap.min.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap-theme.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
@@ -914,7 +878,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-104.166664">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6264" column="40" selection-start-line="6264" selection-start-column="40" selection-end-line="6264" selection-end-column="40" />
           <folding />
         </state>
@@ -922,7 +886,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.541667">
+        <state vertical-scroll-proportion="0.0">
           <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding />
         </state>
@@ -930,23 +894,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/colorGame.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/html/scoreKeeper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/soundEffect.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-133.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="213" column="7" selection-start-line="213" selection-start-column="7" selection-end-line="213" selection-end-column="7" />
           <folding />
         </state>
@@ -954,23 +910,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/todos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4166665">
+        <state vertical-scroll-proportion="-8.041667">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/html/scoreKeeper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.541667">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9166665">
-          <caret line="577" column="0" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.5882354">
+          <caret line="131" column="59" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/mockInterview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4166665">
+        <state vertical-scroll-proportion="-6.7916665">
           <caret line="299" column="77" selection-start-line="299" selection-start-column="77" selection-end-line="299" selection-end-column="77" />
           <folding />
         </state>
@@ -978,8 +942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54989815">
-          <caret line="333" column="10" selection-start-line="333" selection-start-column="10" selection-end-line="333" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.2918455">
+          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
           <folding />
         </state>
       </provider>
