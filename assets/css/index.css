@@ -96,30 +96,32 @@ section .section-color {
 }
 .beiJingLogoFoggy {
 	float: left;
-	width: 150px;
+	width: 110px;
 	height: 100px;
 	background: #EFEFEF;
 	text-align: center;
 	line-height: 100px;
 	/*make text center in the background*/
 	color:#E2E2E2;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 600;
-	margin-right: 30px;
 	text-shadow: 1px 1px 2px #E2E2E2;
 	border-radius: 15px 30px 15px 30px;
 }
-
+.protectEnv {
+	float: left;
+	margin: 15px auto;
+}
 .beiJingLogo {
 	float:left;
-	width: 150px;
+	width: 110px;
 	height: 100px;
 	background: lightskyblue;
 	text-align: center;
 	line-height: 100px;
 	/*make text center in the background*/
 	color:black;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 600;
 	border-radius: 15px 30px 15px 30px;
 }
