@@ -28,7 +28,7 @@
       <file leaf-file-name="todos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/html/todos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.041667">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
             </state>
@@ -48,8 +48,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5882354">
-              <caret line="131" column="59" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="132" column="48" selection-start-line="132" selection-start-column="48" selection-end-line="132" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -58,7 +58,7 @@
       <file leaf-file-name="mockInterview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/html/mockInterview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.7916665">
+            <state vertical-scroll-proportion="0.0">
               <caret line="299" column="77" selection-start-line="299" selection-start-column="77" selection-end-line="299" selection-end-column="77" />
               <folding />
             </state>
@@ -68,8 +68,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2918455">
-              <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.5472103">
+              <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -78,7 +78,7 @@
       <file leaf-file-name="scoreKeeper.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/html/scoreKeeper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.541667">
+            <state vertical-scroll-proportion="0.0">
               <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding />
             </state>
@@ -138,6 +138,7 @@
       <push-target-info repo="$PROJECT_DIR$" source="dev_albert_myweb6" target-remote="origin" target-branch="gh-pages" />
       <push-target-info repo="$PROJECT_DIR$" source="dev_albert_myweb7" target-remote="origin" target-branch="gh-pages" />
       <push-target-info repo="$PROJECT_DIR$" source="dev_albert_myweb8" target-remote="origin" target-branch="gh-pages" />
+      <push-target-info repo="$PROJECT_DIR$" source="dev_albert_myweb9" target-remote="origin" target-branch="gh-pages" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -201,8 +202,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="298" />
-    <option name="y" value="506" />
+    <option name="x" value="34" />
+    <option name="y" value="298" />
     <option name="width" value="1560" />
     <option name="height" value="777" />
   </component>
@@ -232,7 +233,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,6 +285,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -475,7 +476,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458171377789</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add beijing logo, edit padding and margin for homepage">
+      <created>1458202656216</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1458202656216</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -488,7 +495,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="298" y="506" width="1560" height="777" extended-state="0" />
+    <frame x="34" y="298" width="1560" height="777" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18063678" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -558,7 +565,8 @@
     <MESSAGE value="modified mockInterview page and remove academy website" />
     <MESSAGE value="edit responsive" />
     <MESSAGE value="boostrap use cdn&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="boostrap use cdn&#10;" />
+    <MESSAGE value="add beijing logo, edit padding and margin for homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="add beijing logo, edit padding and margin for homepage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -739,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,13 +833,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
@@ -850,23 +857,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap.min.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap-theme.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
@@ -910,7 +917,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/todos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.041667">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
@@ -918,32 +925,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/scoreKeeper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.541667">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5882354">
-          <caret line="131" column="59" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/mockInterview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.7916665">
+        <state vertical-scroll-proportion="0.0">
           <caret line="299" column="77" selection-start-line="299" selection-start-column="77" selection-end-line="299" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="132" column="48" selection-start-line="132" selection-start-column="48" selection-end-line="132" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2918455">
-          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.5472103">
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
           <folding />
         </state>
       </provider>
